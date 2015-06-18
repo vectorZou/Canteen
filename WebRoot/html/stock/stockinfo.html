@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>进货信息</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <style type="text/css">
+    	.confirm_foot{
+    		position:absolute;
+    		top:85%;
+    		left:80%;
+    	}
+    	.form_content{
+    		position:absolute;
+    		top:5%;
+    		float: right;
+    	}
+    </style>
+    
+    <link rel="stylesheet" href="../../css/info/common.css" type="text/css"/>
+    <link rel="stylesheet" href="../../js/bigConfirm/modal.css" type="text/css"/>
+    <link rel="stylesheet" href="../../js/datePicker/skin/WdatePicker.css" type="text/css"/>
+    <link rel="stylesheet" href="../../js/zZBPageGenerator/pager.css" type="text/css"/>
+    
+    <script type="text/javascript" src="../../js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="../../js/datePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="../../js/utils.js"></script>
+    <script type="text/javascript" src="../../js/zZBPageGenerator/zZBPageGenerator.js"></script>
+    <script type="text/javascript" src="../../js/bigConfirm/modal.js"></script>
+	<script type="text/javascript" src="../../js/stock/stockmanager.js"></script>
+  </head>
+  <body>
+    <div id="pager"></div>
+     <div class="contentDiv">
+ 		<table class="fTable">
+    		<thead>
+    			<tr>
+    				<td class="rounded-company">编号</td>
+    				<td>货品名称</td>
+    				<td>价格</td>
+    				<td>数量</td>
+    				<td>总价</td>
+    				<td>进货时间</td>
+    				<td>进货人</td>
+    				<td>检验员</td>
+    			</tr>
+    		</thead>
+    		<tbody id="ftBody">
+    			<tr>
+    				<td class="rounded-company"><input type="radio" value="1"/>1</td>
+    				<td>西瓜</td>
+    				<td>2.35</td>
+    				<td>100</td>
+    				<td>235</td>
+    				<td>2015-06-16 10:28:00</td>
+    				<td><a href="javascript:void(0)">邹志兵</a></td>
+    				<td><a href="javascript:void(0)">xxx</a></td>
+    			</tr>
+    		</tbody>
+    	</table>
+    </div>
+    <div class="clear"></div>
+    <div class="btnDiv">
+    	<a href="javascript:save();" class="button button-khaki"><span>增加</span></a>
+    	<a href="javascript:update();" class="button button-blue"><span>修改</span></a>
+    	<a href="javascript:del();" class="button button-brown"><span>删除</span></a>
+    </div>
+  </body>
+</html>

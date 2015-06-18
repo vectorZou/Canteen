@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+ "http://struts.apache.org/dtds/struts-2.0.dtd">
+ <struts>
+ 	<package name="infoManager" namespace="/control/info" extends="struts-default">
+ 		<action name="ftmanager_*" class="foodTypeAction" method="{1}" >
+ 			<result name="listUI">/html/info/ftm.html</result>
+ 			<result name="treeUI" type="redirect">/html/info/tree.html</result>
+ 		</action>
+ 		
+ 		<action name="fmanager_*" class="foodAction" method="{1}" >
+ 			<result name="listUI">/html/info/fm.html</result>
+ 		</action>
+ 		
+ 		<action name="splmanager_*" class="supplierAction" method="{1}">
+ 			<result name="listUI">/html/info/splm.html</result>
+ 		</action>
+ 		
+ 		<action name="usersmanager_*" class="usersAction" method="{1}">
+ 			<result name="listUI">/html/info/usersm.html</result>
+ 		</action>
+ 	</package>
+ </struts>

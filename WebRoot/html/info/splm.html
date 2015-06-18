@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>供应商信息管理</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+    	.confirm_foot{
+    		position:absolute;
+    		top:85%;
+    		left:80%;
+    	}
+    	.form_content{
+    		position:absolute;
+    		top:5%;
+    		float: right;
+    	}
+    </style>
+    
+    <link rel="stylesheet" href="../../css/info/common.css" type="text/css"/>
+    <link rel="stylesheet" href="../../js/bigConfirm/modal.css" type="text/css"/>
+    <link rel="stylesheet" href="../../js/zZBPageGenerator/pager.css" type="text/css"/>
+    
+    <script type="text/javascript" src="../../js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="../../js/utils.js"></script>
+    <script type="text/javascript" src="../../js/zZBPageGenerator/zZBPageGenerator.js"></script>
+    <script type="text/javascript" src="../../js/bigConfirm/modal.js"></script>
+    <script type="text/javascript" src="../../js/info/splmanager.js"></script>
+    <script type="text/javascript">
+    	window.onload = function(){
+    		ajaxForMy("GET","splmanager_list.do",true,appendHtml2Table);
+    	};
+    </script>  
+  </head>
+  <body>
+    <div id="pager"></div>
+     <div class="contentDiv">
+ 		<table class="fTable">
+    		<thead>
+    			<tr>
+    				<td class="rounded-company">编号</td>
+    				<td>名字</td>
+    				<td>性别</td>
+    				<td>电话</td>
+    				<td>公司</td>
+    				<td>地址</td>
+    				<td>详细信息</td>
+    			</tr>
+    		</thead>
+    		<tbody id="ftBody">
+    			<tr>
+    				<td class="rounded-company"><input type="radio" value="1"/>1</td>
+    				<td>邹志兵</td>
+    				<td>男</td>
+    				<td>13247804689</td>
+    				<td>华东交通大学</td>
+    				<td>江西省南昌市昌北经济开发区双港东大街88号</td>
+    				<td><a href="javascript:void(0)">详细</a></td>
+    			</tr>
+    		</tbody>
+    	</table>
+    </div>
+    <div class="clear"></div>
+    <div class="btnDiv">
+    	<a href="javascript:save();" class="button button-khaki"><span>增加</span></a>
+    	<a href="javascript:update();" class="button button-blue"><span>修改</span></a>
+    	<a href="javascript:del();" class="button button-brown"><span>删除</span></a>
+    </div>
+  </body>
+</html>
